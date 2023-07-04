@@ -3,23 +3,25 @@
     padding: 0px;
     margin: 0px;
 }
-.alpha{
+
+.alpha {
     position: relative;
     top: 70px;
 }
 
-#navbar{
-    background-color:#2b3238;
+#navbar {
+    background-color: #171c21;
     position: fixed;
     top: 0;
     max-height: 70px;
     width: 100%;
-    
+
     z-index: 1;
     align-items: center;
 }
+
 /* box containing facebook twitter and insta icon */
-.right{
+.right {
     position: absolute;
     right: 5px;
     top: 25px;
@@ -30,13 +32,14 @@
 }
 
 /* box containing co-working */
-.leftco{
-    text-decoration: none!important;
+.leftco {
+    text-decoration: none !important;
     display: block;
-    color: white!important;
+    color: white !important;
     z-index: 50;
 
 }
+
 .left {
     /* border: solid 2px red; */
     position: relative;
@@ -47,38 +50,40 @@
     font-size: 25px;
     font-family: sans-serif;
 }
+
 /* box containing co-working */
-.leftco:hover{
-    color: lightgray!important;
-   
+.leftco:hover {
+    color: lightgray !important;
+
 }
 
-div  li a{
-    
-        text-decoration: none;
-        color: white;
-        margin: 5px 10px 5px 10px;
-        padding: 0px 20px 0px 20px;
-        display: block;
-        align-self: center;
-        /* border: solid 1px silver; */
-        font-size: 15px;
-        font-weight: 00;
-        line-height: 70px;
-        letter-spacing: .02em;
-        top: 3px;
-        font-family: sans-serif;
-        position: relative;
-    }
-    
-    div li a:hover{
-        color: lightgray;
+div li a {
+
+    text-decoration: none;
+    color: white;
+    margin: 5px 10px 5px 10px;
+    padding: 0px 20px 0px 20px;
+    display: block;
+    align-self: center;
+    /* border: solid 1px silver; */
+    font-size: 15px;
+    font-weight: 00;
+    line-height: 70px;
+    letter-spacing: .02em;
+    top: 3px;
+    font-family: sans-serif;
+    position: relative;
 }
 
-div  li{
+div li a:hover {
+    color: lightgray;
+}
+
+div li {
     list-style: none;
     display: inline-block;
 }
+
 /* box containing the list */
 .mid {
     display: block;
@@ -86,41 +91,46 @@ div  li{
     width: 60%;
     margin: 0px 0px 0px 125px;
 }
+
 /* header facebook icon */
-#fb{
+#fb {
     position: relative;
     top: 4px;
     margin: 10px;
     pointer-events: initial;
 }
+
 /* header instagram icon */
-#insta{
+#insta {
     position: relative;
-    top:4px;
+    top: 4px;
     margin: 10px;
 }
+
 /* header twitter icon */
-#tw{
+#tw {
     position: relative;
     top: 4px;
     margin: 10px;
 }
 
 
-.sec1{
+.sec1 {
     /* border: solid 2px red; */
     height: 170px;
-    
+
     /* display: inline-block; */
 }
-#text1{
+
+#text1 {
     /* border: solid 2px blue; */
     max-width: 50%;
     display: block;
     right: 0px;
-    position:absolute;
+    position: absolute;
 }
-.head1{
+
+.head1 {
     /* display: inline-block; */
     /* border: solid 2px pink; */
     position: relative;
@@ -131,7 +141,8 @@ div  li{
     left: 100px;
     top: 30px;
 }
-.head2{
+
+.head2 {
     /* display: inline-block; */
     /* border: solid 2px black; */
     position: relative;
@@ -140,23 +151,24 @@ div  li{
     left: 100px;
     top: 25px;
 }
-.mnhead1{
+
+.mnhead1 {
     /* border: solid 2px yellow; */
     max-width: 50%;
     margin-top: 140px;
     display: flex;
 }
 
-.para1{
+.para1 {
     /* border: solid 2px green; */
     text-align: justify;
     font-family: sans-serif;
     /* background-color: rgb(5, 179, 5); */
     font-size: 30px;
     padding: 5px 70px 0px 30px;
-    }
+}
 
-    /* .mnhead2{
+/* .mnhead2{
         display: grid;
         background-color: purple;
         border: solid 2px brown;
@@ -165,73 +177,319 @@ div  li{
 
     .box{
         border: solid 1px burlywood; */
+
+.carousel-item {
+    height: 90vh;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-caption h5 {
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+
+.carousel-caption h1 {
+    padding-top: 5px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.carousel-caption p {
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.button1 {
+    background-color: #20a997;
+    border-color: #20a997;
+    color: #ffffff;
+    margin: 20px 200px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.button1:hover {
+    background-color: #147568;
+}
+
+.icons {
+    box-sizing: border-box;
+    /* border: solid 2px orange; */
+    margin-top: 100px;
+    padding: 5px 100px 5px 100px;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 500px;
+
+}
+
+.icons section {
+    box-sizing: border-box;
+    /* border: solid 2px green; */
+    display: flex;
+    flex-direction: column;
+    padding: 0px 4px 0px 4px;
+    /* margin: 0px 5px 0px 5px; */
+    justify-content: center;
+    text-align: center;
+    width: 25%;
+}
+
+.icons section i {
+    font-size: 50px;
+    color: #6fa01c;
+}
+
+.sub1 {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    flex-direction: row;
+
+}
+
+.sub1 section {
+    width: 50%;
+}
+
+.sub1 .left2 {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 0px 0px 0px 115px;
+}
+
+.sub1 .right2 {
+    height: 700px;
+}
+
+.sub1 .left2 h2 {
+    color: #20a997;
+    letter-spacing: .3em;
+    padding-top: 66px;
+    font-size: 1rem;
+}
+
+.sub1 .left2 h1 {
+    color: #2b3238;
+    font-size: 3rem;
+    line-height: 2.8rem;
+    padding-top: 2px;
+}
+
+.sub1 .left2 p {
+    font-size: 1rem;
+    padding-top: 15px;
+    font-weight: 300;
+    color: black;
+}
+
+.sub1 .right2 img {
+    width: 80%;
+    height: 75%;
+    margin-left: 5px;
+    object-fit: cover;
+}
+
+.box {
+    margin-top: 20vh;
+    display: flex;
+    height: max-content;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-direction: row;
+    row-gap: 3%;
+    padding: 0px 100px 0px 100px;
+    max-height: 3000px;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.box section {
+    box-sizing: border-box;
+    position: relative;
+    min-height: 50vh;
+
+}
+
+.box .box1 {
+    width: 32%;
+
+}
+
+.box .box2 {
+    box-sizing: border-box;
+    width: 32%;
    
-        .carousel-item{
-            height: 90vh;
-        }
+    background-color: #20a997;
+}
 
-        .carousel-caption {
-            top: 50%;
-            transform: translateY(-50%);
-        }
+.box .box2 h1 {
+    font-size: 2.125rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
 
-        .carousel-caption h5 {
-            font-size: 20px;
-            letter-spacing: 10px;
-        }
-        
-        .carousel-caption h1 {
-            padding-top: 5px;
-            font-size: 60px;
-            font-weight: 600;
-        }
-        
-        .carousel-caption p {
-            padding-top: 5px;
-            font-size: 20px;
-        }
-        .button1{
-            background-color: #20a997;
-            border-color: #20a997;
-            color: #ffffff;
-            margin: 20px 200px;
-            font-size: 20px;
-            padding: 10px;
-            border-radius: 5px;
-            align-items: center;
-        }
+}
 
-        .button1:hover{
-            background-color: #147568;
-        }
+.box .box3 {
+    width: 32%;
 
-        .symbol {
-            box-sizing: border-box;
-            /* border: solid 2px orange; */
-            margin-top: 100px;
-            padding: 5px 100px 5px 100px;
-            width: 100%;
-            display: flex;
-            /* align-items: center; */
-            flex-direction: row;
-            flex-wrap: wrap;
-            min-height: 500px;
-        
-        }
-        
-        .symbol section {
-            box-sizing: border-box;
-            /* border: solid 2px green; */
-            display: flex;
-            flex-direction: column;
-            padding: 0px 0.5px 0px 0.5px;
-            /* margin: 0px 5px 0px 5px; */
-            justify-content: center;
-            text-align: center;
-            width: 25%;
-        }
+}
 
-        .symbol section i {
-            font-size: 50px;
-            color: #a1ce55;
-        }
+.box .box4 {
+    margin-top: 20px;
+    width: 66%;
+    min-height: 65vh;
+
+}
+
+.box .box5 {
+    margin-top: 20px;
+    width: 32%;
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 6rem 2rem;
+    color: white;
+    background-color: #341abd;
+    ;
+
+}
+
+.box .box5 h2 {
+    letter-spacing: .3em;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.box .box5 p {
+    font-size: 2.125rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+
+}
+
+.box .box6 {
+    margin-top: 20px;
+    width: 32%;
+
+    background-color: #a1ce55;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+
+.box .box6 i {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.box .box6 h1 {
+    padding-top: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.box .box6 p {
+    padding-top: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.box .box7 {
+    margin-top: 20px;
+    width: 32%;
+
+}
+
+.box .box8 {
+    margin-top: 20px;
+    width: 32%;
+
+}
+
+.box .para {
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    color: white;
+    font-size: 2.225rem;
+    visibility: hidden;
+}
+
+.box img:hover {
+    filter: brightness(50%);
+    transition: .1s ease;
+}
+
+.box .box1:hover .para {
+    visibility: visible;
+    cursor: pointer;
+}
+
+.box .box3:hover .para {
+    visibility: visible;
+    cursor: pointer;
+}
+
+.box .box4:hover .para {
+    visibility: visible;
+}
+
+.box .box7:hover .para {
+    visibility: visible;
+}
+
+.box .box8:hover .para {
+    visibility: visible;
+}
+
+.box section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.samp1 {
+    min-height: 20vh;
+    /* border: 2px solid red; */
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    min-height: 20vh;
+    text-align: center;
+}
+
+.samp1 h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #20a997;
+}
+
+.samp1 p {
+    font-size: 3rem;
+    color: black;
+    font-weight: 510;
+}
+
+/* owl carasoul */
+.owl-carousel {
+    margin-top: 3vh;
+}
