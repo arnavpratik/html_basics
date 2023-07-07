@@ -79,7 +79,7 @@
     color: lightgray;
 }
 
-.mid li {
+.main {
     list-style: none;
     display: inline-block;
 }
@@ -90,6 +90,42 @@
     /* border: solid 2px violet; */
     width: 60%;
     margin: 0px 0px 0px 125px;
+}
+
+.sub-menu{
+    background-color: #171c21;
+}
+.omega {
+    position: absolute;
+    left: 43rem;
+    top: 4rem;
+    background-color:#171c21;
+    visibility: hidden;
+    width: 160px;
+    align-items: center;
+}
+.omega ul{
+    background-color: #171c21;
+}
+.omega li a{
+    margin: 0px 0px;
+    text-decoration: none;
+    
+}
+
+.omega li{
+    visibility: hidden;
+    background-color: #171c21;
+    margin: 0px 0px;
+    color: #ffffff;
+    padding-left: 15px;
+    align-self: center;
+    list-style: none;
+    marker: none;
+}
+
+.customm:hover .omega li{
+visibility: visible!important;
 }
 
 /* header facebook icon */
