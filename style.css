@@ -4,152 +4,123 @@
     margin: 0px;
 }
 
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+
 .alpha {
     position: relative;
-    top: 70px;
-}
-
-#navbar {
-    background-color: #171c21;
-    position: fixed!important;
     top: 0;
-    max-height: 70px;
-    width: 100%;
+}
 
-    z-index: 1000;
+
+header {
+    background-color: rgb(35, 35, 41);
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 5;
 }
 
-/* box containing facebook twitter and insta icon */
-.right {
-    position: absolute;
-    right: 5px;
-    top: 25px;
-    width: 200px;
-    height: 50px;
-    /* border: solid 2px green; */
-
-}
-
-/* box containing co-working */
-.leftco {
-    text-decoration: none !important;
-    display: block;
-    color: white !important;
-    z-index: 50;
+.mid nav ul li {
+    display: inline-block;
+    list-style-type: none;
 
 }
 
-.left {
-    /* border: solid 2px red; */
+.mid .sub-menu {
+    display: none;
     position: relative;
-    top: -9px;
-    left: 125px;
-    font-weight: 500;
-    z-index: 50;
-    font-size: 25px;
-    font-family: sans-serif;
 }
 
-/* box containing co-working */
-.leftco:hover {
-    color: lightgray !important;
+.mid .sub-menu ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(35, 35, 41);
+}
+
+.mid .sub-menu ul li {
+    padding-top: 22px;
+    padding-right:8px;
+    padding-bottom: 10px;
+    margin-left: -40px;
+}
+
+.mid .smain:hover .sub-menu {
+    display: block;
 
 }
 
-.mid li a {
+.mid .smain1 {
+    display: none;
+}
 
+.mid {
+    padding-top: 10px;
+}
+
+.header section a {
     text-decoration: none;
     color: white;
-    margin: 5px 10px 5px 10px;
-    padding: 0px 20px 0px 20px;
-    display: block;
-    align-self: center;
-    /* border: solid 1px silver; */
-    font-size: 15px;
-    font-weight: 00;
-    line-height: 70px;
-    letter-spacing: .02em;
-    top: 3px;
-    font-family: sans-serif;
-    position: relative;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+
 }
 
-.mid li a:hover {
-    color: lightgray;
+.header section {
+    display: none;
 }
 
-.main {
-    list-style: none;
+.social {
+    padding-top: 10px;
+}
+
+.social nav ul li {
     display: inline-block;
-}
-
-/* box containing the list */
-.mid {
-    display: block;
-    /* border: solid 2px violet; */
-    width: 60%;
-    margin: 0px 0px 0px 125px;
-}
-
-.sub-menu{
-    background-color: #171c21;
-}
-.omega {
-    position: absolute;
-    left: 43rem;
-    top: 4rem;
-    background-color:#171c21;
-    visibility: hidden;
-    width: 160px;
-    align-items: center;
-}
-.omega ul{
-    background-color: #171c21;
-}
-.omega li a{
-    margin: 0px 0px;
-    text-decoration: none;
-    
-}
-
-.omega li{
-    visibility: hidden;
-    background-color: #171c21;
-    margin: 0px 0px;
-    color: #ffffff;
-    padding-left: 15px;
-    align-self: center;
     list-style: none;
-    marker: none;
+
 }
 
-.customm:hover .omega li{
-visibility: visible!important;
+.mid nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0 30px;
+
 }
 
-/* header facebook icon */
-#fb {
-    position: relative;
-    top: 4px;
-    margin: 10px;
-    pointer-events: initial;
+.social nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 0 10px;
 }
 
-/* header instagram icon */
-#insta {
-    position: relative;
-    top: 4px;
-    margin: 10px;
+.mid nav ul li .Logo {
+    font-size: 1.5rem;
+    font-weight: 505;
 }
 
-/* header twitter icon */
-#tw {
-    position: relative;
-    top: 4px;
-    margin: 10px;
+.mid nav li a:hover {
+    color: rgb(214, 212, 212);
+    transition: .4s;
 }
 
+.toggle_btn {
+    font-size: 1.5rem;
+    color: white;
+    display: none;
+
+}
 
 .sec1 {
     /* border: solid 2px red; */
@@ -826,4 +797,115 @@ visibility: visible!important;
 .footer .phone:hover {
     color: rgb(190, 185, 185);
     transition: .3s ease;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 900px) {
+
+    
+
+    header {
+        position: relative;
+    }
+
+    .mid .smain:hover .sub-menu {
+        display: none;
+
+    }
+
+    .mid .smain1 {
+        display: block;
+    }
+
+    .mid nav ul {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(51, 51, 51);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translate(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: none;
+        pointer-events: none;
+    }
+
+    .active .mid nav ul {
+        opacity: 1;
+        transform: translatex(0);
+        visibility: visible;
+        pointer-events: auto;
+
+    }
+
+    .active .mid .sub-menu {
+        position: relative;
+        top: 100px;
+        height: 10vh;
+    }
+
+    .header section {
+        position: absolute;
+        left: 8px;
+        top: 15px;
+        display: block;
+
+        font-size: 1.5rem;
+    }
+
+    .mid nav ul li .Logo {
+        position: absolute;
+        left: 0px;
+        top: 15px;
+        display: block;
+
+        font-size: 1.5rem;
+        display: none;
+    }
+
+    .toggle_btn:hover {
+        cursor: pointer;
+    }
+
+    .social nav li a {
+        display: none;
+    }
+
+    .toggle_btn {
+        position: absolute;
+        right: 4px;
+        top: 15px;
+        display: block;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .mnhead1{
+        flex-wrap: wrap;
+        margin-top: 0px;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .head1{
+        top:0
+    }
+    .sec1{
+        top: 0;
+        position: relative;
+        display: block;
+        min-width: 100%;
+    }
+    .sec2{
+        display: block;
+        min-width: 100%;
+        margin-block-start: 100px;
+        left: 100px;
+        position: relative;
+    }
 }
