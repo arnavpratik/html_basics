@@ -612,7 +612,7 @@ header {
 .sub3 .samp3 .end {
     min-height: auto;
     display: flex;
-    padding: 0px 100px 0px 100px;
+    padding: 0vw 7.45vw 0vw 7.45vw;
     flex-direction: row;
     justify-content: space-between;
 
@@ -1121,11 +1121,37 @@ header {
 
 
 @media (max-width: 600px) {
+
+.carousel-caption h5{
+    font-size: 0.75rem;
+}
+.carousel-caption .button1{
+    line-height: 0px;
+}
+.carousel-caption button{
+    height: 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100px;
+}
+.carousel-caption h1{
+    font-size: 1rem;
+}
+.carousel-caption p{
+    font-size: 0.675rem;
+}
+
+    .button1{
+        left: -33%;
+        position: relative;
+    }
     .icons section {
         width: 100%;
         margin-top: 20px;
     }
-
+.samp1{
+    margin-top: 140vh;
+}
     .box {
         padding: 0px 10px 0px 10px;
     }
