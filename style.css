@@ -124,31 +124,40 @@ header {
 }
 
 .container1 {
-    margin: 10vh;
-    border: 2px solid red;
-    min-height: 50vh;
+    margin: 10vh 10vh 0vh 10vh;
+    /* border: 2px solid red; */
+    min-height: 40vh;
     display: flex;
 }
 
 .mnhead1 {
     width: 100%;
-    min-height: 50vh;
-    border: 2px solid yellow;
+    min-height: 40vh;
+    /* border: 2px solid yellow; */
     display: flex;
     flex-direction: row;
 }
 
+.head1 {
+    color: #20a997;
+    letter-spacing: 0.35rem;
+    font-size: 0.95rem;
+}
+
+
 .mnhead1 .sec1 {
     width: 50%;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 
 .mnhead1 .sec2 {
     width: 50%;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 
-
+.sec2 p {
+    font-size: 1.5625rem;
+}
 
 /* .mnhead2{
         display: grid;
@@ -203,7 +212,7 @@ header {
 .icons {
     box-sizing: border-box;
     /* / border: solid 2px orange; / */
-    margin-top: 100px;
+    /* margin-top: 100px; */
     padding: 5px 100px 5px 100px;
     width: 100%;
     display: flex;
@@ -611,8 +620,8 @@ header {
 
 .sub3 .samp3 .end div {
     position: relative;
-    min-height: 35vh;
-    width: 23%;
+    min-height: 50vh;
+    width: 24%;
     /* / border:2px solid yellow; / */
 }
 
@@ -668,7 +677,7 @@ header {
 .container2 {
     width: 93%;
     margin-left: 7%;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -684,7 +693,7 @@ header {
     flex-direction: column;
     min-height: 50vh;
     /* / margin-left: 20vh; / */
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* / border: 2px solid red; / */
 
 }
@@ -753,7 +762,10 @@ header {
     color: white;
 }
 
-
+.footer div ul li::before {
+    content: "-";
+    margin-right: 5px;
+}
 
 .footer div ul li {
     text-decoration: none;
@@ -873,9 +885,28 @@ header {
         color: white;
     }
 
+    .container1 {
+        max-height: 40vh;
+        min-height: 0;
+        margin: 5vh 5vh 0vh 5vh;
+    }
+
+    .head1 {
+        color: #20a997;
+        letter-spacing: 0.3rem;
+        font-size: 1em;
+    }
+
+    .head2 {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
     .mnhead1 {
         display: flex;
         width: 100%;
+        max-height: 40vh;
+        min-height: 0;
         flex-direction: column;
     }
 
@@ -885,6 +916,11 @@ header {
 
     .mnhead1 .sec2 {
         width: 100%;
+        margin-top: 4vh;
+    }
+
+    .sec2 p {
+        font-size: 1.5rem;
     }
 
     .carousel-item {
@@ -927,6 +963,10 @@ header {
         transition: .3s ease;
     }
 
+    .icons {
+        margin-top: 100px;
+    }
+
     .icons section {
         width: 50%;
     }
@@ -935,8 +975,24 @@ header {
         flex-direction: column;
     }
 
+    .sub1 .left2 {
+        padding: 0px 50px 0px 60px;
+    }
+
+    .sub1 .right2 img {
+        width: 100%;
+        height: 100%;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        object-fit: contain;
+    }
+
     .sub1 section {
         width: 100%;
+    }
+
+    .box {
+        margin-top: 10vh;
     }
 
     .box .box1 {
@@ -978,7 +1034,7 @@ header {
         width: 100%;
     }
 
-    .samp1{
+    .samp1 {
         margin-top: 175vh;
     }
 
@@ -992,10 +1048,12 @@ header {
         margin-top: 5vh;
         width: 100%;
     }
-.imgg img{
-    align-self: center;
-    padding: 0px 50px;
-}
+
+    .imgg img {
+        align-self: center;
+        padding: 0px 50px;
+    }
+
     .sub3 .samp3 {
         width: 100%;
     }
@@ -1031,12 +1089,14 @@ header {
         text-align: center;
     }
 
-    .container2{
+    .container2 {
         flex-direction: column;
     }
-.footer .container2 div{
-    width: 100%;
-}
+
+    .footer .container2 div {
+        width: 100%;
+    }
+
     .footer .button input {
         width: 90%;
         border: none;
@@ -1049,13 +1109,28 @@ header {
         margin-top: 11px;
         height: 33px;
         border: none;
-        background-color: white;
+        background-color: #333;
 
     }
 
-    .footer div ul {
-        list-style-type:none;
+    .footer div ul li::before {
+        content: none;
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .icons section {
+        width: 100%;
+        margin-top: 20px;
     }
 
+    .box {
+        padding: 0px 10px 0px 10px;
+    }
 
+    .sub .samp3 .end {
+        padding: 0px 10px 0px 10px;
+    }
 }
